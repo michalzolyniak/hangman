@@ -2,7 +2,7 @@ import re
 import sys
 
 
-def load_data(pth: str) -> list():
+def load_data(pth: str) -> list:
     """
     :param pth: data path
     :return: data as list
@@ -12,7 +12,7 @@ def load_data(pth: str) -> list():
     return data
 
 
-def find_occurrences(word: str, symbol: str, operation: str) -> list():
+def find_occurrences(word: str, symbol: str, operation: str) -> list:
     """
     :param word:the word where letter or symbol is look for
     :param symbol: letter or expression to find in word
@@ -28,12 +28,12 @@ def find_occurrences(word: str, symbol: str, operation: str) -> list():
     return occurrences
 
 
-def check_args_parametr(parametr_name) -> bool:
+def check_args_parameter(parameter_name) -> bool:
     """
-    :param parametr_name: parametr name to find
-    :return: True when parametr_name exists in args
+    :param parameter_name: parameter name to find
+    :return: True when parameter_name exists in args
     """
-    if parametr_name in sys.argv:
+    if parameter_name in sys.argv:
         return True
     else:
         return False
